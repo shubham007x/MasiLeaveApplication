@@ -50,6 +50,7 @@ function updateDisplay(array) {
 
       grant.addEventListener("click", function () {
         var otp = generateOTP();
+        alert(otp);
         reject.setAttribute("style", "display:none");
         grant.setAttribute("style", "display:none");
         OTP.setAttribute("style", "display:block");
@@ -66,6 +67,7 @@ function updateDisplay(array) {
 
           localStorage.setItem("leaves", JSON.stringify(arr));
           updateDisplay(arr);
+          window.location.href = "../Pages/Status.html";
         }
       });
     }

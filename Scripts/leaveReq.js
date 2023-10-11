@@ -35,5 +35,6 @@ form.addEventListener("submit", function () {
     arr.push(obj);
     localStorage.setItem("leaves", JSON.stringify(arr));
     console.log(arr);
+    window.location.href = "../Pages/Dashboard.html";
   } else alert("Enter all details");
 });
