@@ -68,6 +68,8 @@ function updateDisplay(array) {
           localStorage.setItem("leaves", JSON.stringify(arr));
           updateDisplay(arr);
           window.location.href = "../Pages/Status.html";
+        } else {
+          alert("wrong otp");
         }
       });
     }
