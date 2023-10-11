@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/status.css" />
+  </head>
+  <body>
+    <h1>Leave Status Page</h1>
+    <label for="filter">Filter by Status:</label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="granted">Granted</option>
+      <option value="rejected">Rejected</option>
+      <option value="pending">Pending</option>
+    </select>
+    <table id="leaveStatusTable">
+      <thead>
+        <tr>
+          <th>Unique ID</th>
+          <th>Name</th>
+          <th>Days of Leave</th>
+          <th>Overseer</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="status"></tbody>
+    </table>
+  </body>
+</html>
+<script src="../Scripts/status.js"></script>
